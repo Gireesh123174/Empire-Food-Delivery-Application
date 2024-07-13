@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>tapfood</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet-mapping>
+  <servlet-name>Calling</servlet-name>
+  <url-pattern>/CallingServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ <servlet-name>Calling</servlet-name>
+ <servlet-class>com.tap.controller.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Calling1</servlet-name>
+  <url-pattern>/RestaurantServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ <servlet-name>Calling1</servlet-name>
+ <servlet-class>com.tap.controller.RestaurantServlet1</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+    <servlet-name>Calling2</servlet-name>
+    <url-pattern>/CallServletCart</url-pattern>
+</servlet-mapping>
+
+  
+  <servlet>
+ <servlet-name>Calling2</servlet-name>
+ <servlet-class>com.tap.controller.CartServlet</servlet-class>
+  </servlet>
+  
+</web-app>
